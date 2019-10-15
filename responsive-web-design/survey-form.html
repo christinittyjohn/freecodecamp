@@ -1,0 +1,62 @@
+
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    background: url(https://i.imgur.com/MJAkxbh.png);
+ 
+    text-align: center;
+  }
+  #title, #description{
+    text-align: center;
+  }
+  #survey {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  form,label{
+    display: block;
+  }
+  input{
+    margin: 10px;
+  }
+  form-text{
+    font-family: 'Playfair Display', serif;
+  }
+  select{
+    margin: 10px;
+  }
+  button{
+    margin: 10px;
+  }
+</style>
+<h1 id="title">A form</h1>
+<p id="description">This form takes information.</p>
+<div id="survey">
+  <h3 class="form-text">Personal Details</h3>
+  <form id="survey-form">
+    <label id="name-label">Enter your<input id="name" placeholder="name" type="text" required></label><br>
+    <label id="email-label">Enter your<input id="email" placeholder="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label><br>
+    <label id="number-label">Enter your<input id="number" placeholder="age" type="number" min="19" max="24"></label><br>
+    <h3 class="form-text">Your preferences</h3>
+    <select id="dropdown">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select><br>
+    <label for="group1">
+      <input type="radio" name="groups" id="group1" value="group1">group1</label><br>
+    <label fro="group2">
+      <input type="radio" name="groups" id="group2" value="group2">group2</label><br>
+    <label for="box1">
+      <input type="checkbox" name="boxes" value="box1" id="box1">box1</label><br>
+    <label for="box2">
+      <input type="checkbox" name="boxes" id="box2" value="box2">box2</label><br>
+    <textarea rows="8" cols="20"  placeholder="Please enter suggestions."></textarea><br>
+    <button>
+    <input type="submit" id="submit">
+    </button>
+  </form>
+</div>      
+    
