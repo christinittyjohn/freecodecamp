@@ -1,0 +1,68 @@
+<style>
+body{
+  background: url(https://i.imgur.com/MJAkxbh.png);
+}
+#header{
+  text-align: center;
+  font-family: sans-serif;
+  height: auto;
+  width: auto;
+  margin: auto;
+  diplay: flex;
+  flex-direction: row;
+}
+#header-img{
+  max-width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+#nav-bar{
+  background-color: rgba(45,45,45,0.1);
+  position: fixed;
+  width:auto;
+  height:auto;
+  right:0px;
+  top:0px;
+}
+.nav-link{
+  color: black;
+  margin: 10px;
+}
+#video{
+  margin: 20px;
+}
+
+footer{
+  background: rgba(45,45,45,0.1);
+}
+
+@media (max-width: 400px){
+    #header-img{
+      align-self: center;
+    }
+  #video{
+    width: auto;
+  }
+  }
+#form{
+  margin: 20px;
+}
+</style>
+<header id="header">
+  <h1>Ukuleles for tunes</h1>
+  <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Guitar-ukulele-logo-design-inspiration-by-yahyaanasatokillah-580x387.jpg" id="header-img" alt="minimal ukulele design.">
+  <nav id="nav-bar">
+    <a href=#video class="nav-link">Learn to play</a>
+    <a href=#footer class="nav-link">About Us</a>
+    <a href=#email class="nav-link">Learn More</a>
+  </nav>
+</header>
+<main>
+  <h2>Ukulele Video</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/V1bFr2SWP1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+  <form id="form" action="https://freecodecamp.com/email-submit">
+    <input type="email" id="email" placeholder="Please enter your email" name="email">
+    <input type="submit" value="Submit" id="submit">
+</main>
+  <footer id="footer">
+    We don't sell Ukeleles.</footer>
