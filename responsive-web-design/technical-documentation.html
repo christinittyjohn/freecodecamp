@@ -1,0 +1,87 @@
+
+<style>
+body {
+  marign: 0;
+}
+@media (min-width: 600px){
+#navbar {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+}
+.nav-link{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+#main-doc {
+  margin-left: 25%;
+  padding: 1px 15px;
+  height: 100px;
+}
+.nav-link.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.nav-link:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+}
+
+</style>
+
+<body>
+<nav id="navbar">
+  <header style="text-align: center; font-size:30px;">Html</header>
+  <a class="nav-link active" href="#Introduction_to_HTML">Introduction to Html</a>
+  <a class="nav-link" href="#Prerequisites">Prerequisites</a>
+  <a class="nav-link" href=#Getting_started_with_Html>Getting started with Html</a>
+  <a class="nav-link" href="#What's_in_the_head?_Metadata_in_html">What's in the head? Metadata in Html</a>
+  <a class="nav-link" href="#Html_Text_Fundamentals">Html Text Fundamentals</a>
+  
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction_to_HTML">
+    <header><h1>Introduction to HTML</h1></header>
+    <p>At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these, and introduce fundamental concepts and syntax you need to know to understand HTML.</p>
+    <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.</p>
+    <ul>
+      <li>Html is used in every website.</li>
+      <li><code>&ltscript&gt</code> can be used to add Java Script to the web page which adds a lot more functionality.</li>
+      <li><code>&ltlink&gt</code> is used to include CSS files which is used to style the webpage.</li>
+      <li>Initial release of html was in 1996.</li>
+      <li>Tim Berns Lee was a contractor for CERN, created Html for scientists to communicate over the systems available for them. Thid was in 1990. </li>
+      </ul>
+    </section>
+   <section class="main-section" id="Prerequisites">
+  <header><h1>Prerequisites</h1></header>
+     <p>Before starting this module, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content). You should have a basic work environment set up (as detailed in Installing basic software), and understand how to create and manage files (as detailed in Dealing with files). Both are parts of our Getting started with the web complete beginner's module.</p>
+     <p class="note">Note: If you are working on a computer/tablet/other device that doesn't let you create your own files, you can try out (most of) the code examples in an online coding program such as JSBin or Thimble.</p>  
+  </section>
+   <section class="main-section" id="Getting_started_with_Html">
+     <header><h1>Getting started with Html</h1></header>
+     <p>HTML (Hypertext Markup Language) is not a programming language; it is a markup language used to tell your browser how to structure the web pages you visit. It can be as complicated or as simple as the web developer wishes it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way. The enclosing tags can make a bit of content into a hyperlink to link to another page on the web, italicize words, and so on.</p>
+     <p>The main parts of our element are:</p>
+     <ol>
+       <li>The <strong>opening tag</strong>: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the start of the paragraph is.</li>
+       <li>The <strong>closing tag</strong>: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is a common beginner error and can lead to strange results.</li>
+    </ol>
+    </section>
+   <section class="main-section" id="What's_in_the_head?_Metadata_in_html">
+     <header><h1>What's in the head? Metadata in html</h1></header>
+     <p>The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page <strong>&lttitle&gt</strong>, links to CSS (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document.) In this article we'll cover all of the above and more, in order to give you a good basis for working with markup.</p>
+       <p>The HTML head is the contents of the <code>&lthead&gt</code> element — unlike the contents of the <code>&ltbody&gt</code> element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document. </p>
+         <p>We've already seen the <code>&lttitle&gt</code> element in action — this can be used to add a title to the document. This however can get confused with the <code>&lth1&gt</code> element, which is used to add a top level heading to your body content — this is also sometimes referred to as the page title.</p>
+    </section>
+   <section class="main-section" id="Html_Text_Fundamentals">
+     <header><h1>Html Text Fundamentals</h1></header>
+     <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.</p>
+     <p>There are six heading elements — <code>&lth1&gt</code>, <code>&lth2&gt</code>,<code>&lth3&gt</code>, <code>&lth4&gt</code>,<code>&lth5&gt</code>, and <code>&lth6&gt</code>. Each element represents a different level of content in the document; <code>&lth1&gt</code> represents the main heading,<code>&lth2&gt</code> represents subheadings,<code>&lth3&gt</code> represents sub-subheadings, and so on.</p>
+    </section>
+  </main>
+  <body>
